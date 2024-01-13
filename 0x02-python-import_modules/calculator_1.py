@@ -1,4 +1,5 @@
-def add(a: object, b: object) -> object:
+#!/usr/bin/python3
+def add(a, b):
     """My addition function
 
     Args:

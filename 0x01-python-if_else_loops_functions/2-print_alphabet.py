@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+
 output = ""
 
-for les in range(97, 123):
-    output = chr(les)
-    print("{}".format(output), end='')
+for letter in range(ord('a'), ord('z') + 1):
+    output += chr(letter)
+
+print("{}".format(output), end='')

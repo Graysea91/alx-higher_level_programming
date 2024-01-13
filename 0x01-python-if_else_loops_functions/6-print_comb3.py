@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-for a in range(0, 10):
-    for y in range(a + 1, 10):
-        if a == 8 and y == 9:
-            print('89')
-        else:
-            print('{}{}, '.format(a, y), end='')
+def print_matrix_integer(matrix=[[]]):
+    for row in matrix:
+        for i, num in enumerate(row):
+            if i < len(row) - 1:
+                print("{:d}".format(num), end=" ")
+            else:
+                print("{:d}".format(num))

@@ -1,2 +1,1 @@
-0x00. Python-Hello_World
-1. 0-run
+Read me for python hello world

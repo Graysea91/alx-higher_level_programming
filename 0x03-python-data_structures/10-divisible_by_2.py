@@ -5,8 +5,8 @@ def divisible_by_2(my_list=[]):
 
     for num in my_list:
 
-        divisible_2 = num % 2 == 0
+        is_divisible = num % 2 == 0
 
-        new_list.append(divisible_2)
+        new_list.append(is_divisible)
 
     return new_list

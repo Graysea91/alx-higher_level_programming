@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+
 output = ""
-for les in range(97, 123):
-    output = chr(les)
-    if output == 'q' or output == 'e':
-        continue
-    print("{}".format(output), end='')
+
+for letter in range(ord('a'), ord('z') + 1):
+
+    if (chr(letter) != 'e' and chr(letter) != 'q'):
+        print("{}".format(chr(letter)), end='')

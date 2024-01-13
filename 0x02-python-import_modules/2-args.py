@@ -1,21 +1,32 @@
 #!/usr/bin/python3
 import sys
-if __name__ == "__main__":
-    list_argv = sys.argv
-    list_argv.pop(0)
 
-    liat_len = len(list_argv)
+if __name__ == "__main__":
+
+    my_list = sys.argv
+
+    my_list.pop(0)
+
+    list_length = len(my_list)
+
     arg = ""
 
-    if liat_len == 0:
+    if list_length == 0:
+
         arg = "arguments" + "."
-    elif liat_len == 1:
+
+    elif list_length == 1:
+
         arg = "argument" + ":"
+
     else:
+
         arg = "arguments" + ":"
-    print(f"{liat_len} {arg}")
 
-    length = liat_len - 1
+    print(f"{list_length} {arg}")
 
-    for num in range(liat_len):
-        print(f"{num + 1}: {list_argv[num]}")
+    length = list_length + 1
+
+    for num in range(list_length):
+
+        print(f"{num + 1}: {my_list[num]}")
